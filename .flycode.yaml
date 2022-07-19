@@ -1,13 +1,16 @@
-version: "0.1"
-environments:
-  - name: master
-    branch: master
-    mode: pull-request
-    
-    
+overridesConfigurationFile: false
 apps:
   - name: flycode-angular-example-app
+    slug: flycode-angular-example-app
     path: ""
     text-resources:
-      - path: "*.html"
+      - id: cl5sbx1kx243390as69ih9nc3u
+        path: "*.html"
         format: angular-hardcoded
+    image-resources: false
+environments:
+  - id: cl5sbx1ky243460as6g14i88r8
+    name: master
+    branch: master
+    mode: pull-request
+version: "0.1"
